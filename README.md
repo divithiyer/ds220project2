@@ -71,7 +71,7 @@ The project is available as a live webpage via GitHub Pages:
 
 ##  Files in Repository
 
-- `project2dds220goldtrends.html` → Final exported notebook (for GitHub Pages)
+- `index.html` → Final exported notebook (for GitHub Pages)
 - `project2.ds220gold.ipynb` file → Jupyter Notebook with full analysis
 - `README.md` → Project documentation
 
