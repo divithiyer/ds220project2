@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>project2dds220goldtrends</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>project2ds220gold</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7802,13 +7802,16 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Python-Libraries-for-Data-Analytics-&amp;-Data-Science">Python Libraries for Data Analytics &amp; Data Science<a class="anchor-link" href="#Python-Libraries-for-Data-Analytics-&amp;-Data-Science">¶</a></h1><ul>
-<li><p>**	NumP<strong>y: A library that makes a variety of mathematical and statistical operations easier; it is also the basis for many features of the pandas library. NumPy is implemented in the C language and hence provides much faster array processing performance as required for large sets of data in a distributed- **•	Matplotl</strong>ib: A visualization library that makes it quick and easy to generate graphs and charts from our data- **
-•	Seab<strong>orn – modern visualization package built on Matplotl- **P
-•	pa</strong>ndas: A Python library created specifically to facilitate working with data. This is the bread and butter of a lot of Python data-science wo- <strong>.
-•	scikit-</strong>learn: Probably the most popular library for machine learning in Py</p>
+<h2 id="Python-Libraries-for-Data-Analytics-&amp;-Data-Science">Python Libraries for Data Analytics &amp; Data Science<a class="anchor-link" href="#Python-Libraries-for-Data-Analytics-&amp;-Data-Science">¶</a></h2><ul>
+<li><p><strong>NumPy</strong>: A fundamental library for numerical computing in Python. It enables fast mathematical and statistical operations using efficient array structures and forms the foundation for many features in pandas.</p>
 </li>
-<li><p><strong>Working with Numpy</strong> thon.</p>
+<li><p><strong>Matplotlib</strong>: A powerful visualization library used to create graphs, charts, and plots for data analysis.</p>
+</li>
+<li><p><strong>Seaborn</strong>: A modern data visualization library built on top of Matplotlib, providing more advanced and aesthetically pleasing statistical graphics.</p>
+</li>
+<li><p><strong>Pandas</strong>: A core data analysis library designed for handling structured data. It provides tools for data manipulation, cleaning, and analysis, making it essential for data science workflows.</p>
+</li>
+<li><p><strong>Scikit-learn</strong>: A widely used machine learning library in Python that offers simple and efficient tools for data modeling, classification, regression, and evaluation.</p>
 </li>
 </ul>
 </div>
@@ -7837,7 +7840,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -7855,7 +7858,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8043,7 +8046,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">"Date"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"date"</span><span class="p">])</span>
@@ -8060,7 +8063,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8237,7 +8240,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"date"</span><span class="p">])</span>
@@ -8273,6 +8276,110 @@ a.anchor-link {
 <li>Are there noticeable trends or cycles in gold prices?</li>
 <li>What are the highest and lowest price periods?</li>
 </ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6c2f1aac">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Exploratory-Data-Analysis">Exploratory Data Analysis<a class="anchor-link" href="#Exploratory-Data-Analysis">¶</a></h2><p>Before performing detailed analysis, we examine the structure and summary statistics of the dataset to understand its properties and identify any potential issues such as missing values or anomalies.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=95d23bcd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.DataFrame'&gt;
+RangeIndex: 2306 entries, 0 to 2305
+Data columns (total 26 columns):
+ #   Column           Non-Null Count  Dtype         
+---  ------           --------------  -----         
+ 0   price            2306 non-null   float64       
+ 1   year             2306 non-null   int64         
+ 2   month            2306 non-null   int64         
+ 3   quarter          2306 non-null   int64         
+ 4   month_sin        2306 non-null   float64       
+ 5   month_cos        2306 non-null   float64       
+ 6   lag_1            2306 non-null   float64       
+ 7   lag_2            2306 non-null   float64       
+ 8   lag_3            2306 non-null   float64       
+ 9   lag_6            2306 non-null   float64       
+ 10  lag_12           2306 non-null   float64       
+ 11  roll_mean_3      2306 non-null   float64       
+ 12  roll_mean_6      2306 non-null   float64       
+ 13  roll_mean_12     2306 non-null   float64       
+ 14  roll_std_3       2306 non-null   float64       
+ 15  roll_std_6       2306 non-null   float64       
+ 16  momentum_1       2306 non-null   float64       
+ 17  momentum_3       2306 non-null   float64       
+ 18  pct_change_1     2306 non-null   float64       
+ 19  pct_change_3     2306 non-null   float64       
+ 20  ewm_3            2306 non-null   float64       
+ 21  ewm_6            2306 non-null   float64       
+ 22  price_to_roll3   2306 non-null   float64       
+ 23  price_to_roll12  2306 non-null   float64       
+ 24  volatility_3     2306 non-null   float64       
+ 25  date             2306 non-null   datetime64[us]
+dtypes: datetime64[us](1), float64(22), int64(3)
+memory usage: 468.5 KB
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>price              0
+year               0
+month              0
+quarter            0
+month_sin          0
+month_cos          0
+lag_1              0
+lag_2              0
+lag_3              0
+lag_6              0
+lag_12             0
+roll_mean_3        0
+roll_mean_6        0
+roll_mean_12       0
+roll_std_3         0
+roll_std_6         0
+momentum_1         0
+momentum_3         0
+pct_change_1       0
+pct_change_3       0
+ewm_3              0
+ewm_6              0
+price_to_roll3     0
+price_to_roll12    0
+volatility_3       0
+date               0
+dtype: int64</pre>
+</div>
 </div>
 </div>
 </div>
@@ -8314,7 +8421,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">"date"</span><span class="p">)[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
@@ -8328,7 +8435,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;Axes: xlabel='date'&gt;</pre>
 </div>
@@ -8368,7 +8475,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">"price_change"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span>
@@ -8419,7 +8526,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"date"</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
@@ -8436,7 +8543,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>decade
 1830      18.930000
@@ -8491,7 +8598,7 @@ Name: price, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">"date"</span><span class="p">)[</span><span class="s2">"roll_std_6"</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
@@ -8541,7 +8648,7 @@ Name: price, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">"date"</span><span class="p">)[</span><span class="s2">"roll_mean_12"</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
@@ -8591,7 +8698,7 @@ Name: price, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">highest</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()]</span>
@@ -8648,114 +8755,6 @@ Lowest Price:
 <li>Volatility in gold prices has increased in more recent decades.</li>
 <li>Gold remains a reliable long-term store of value despite short-term fluctuations.</li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6c2f1aac">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Exploratory-Data-Analysis">Exploratory Data Analysis<a class="anchor-link" href="#Exploratory-Data-Analysis">¶</a></h2><p>Before performing detailed analysis, we examine the structure and summary statistics of the dataset to understand its properties and identify any potential issues such as missing values or anomalies.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=95d23bcd">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-<span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;class 'pandas.DataFrame'&gt;
-RangeIndex: 2306 entries, 0 to 2305
-Data columns (total 28 columns):
- #   Column           Non-Null Count  Dtype         
----  ------           --------------  -----         
- 0   price            2306 non-null   float64       
- 1   year             2306 non-null   int32         
- 2   month            2306 non-null   int64         
- 3   quarter          2306 non-null   int64         
- 4   month_sin        2306 non-null   float64       
- 5   month_cos        2306 non-null   float64       
- 6   lag_1            2306 non-null   float64       
- 7   lag_2            2306 non-null   float64       
- 8   lag_3            2306 non-null   float64       
- 9   lag_6            2306 non-null   float64       
- 10  lag_12           2306 non-null   float64       
- 11  roll_mean_3      2306 non-null   float64       
- 12  roll_mean_6      2306 non-null   float64       
- 13  roll_mean_12     2306 non-null   float64       
- 14  roll_std_3       2306 non-null   float64       
- 15  roll_std_6       2306 non-null   float64       
- 16  momentum_1       2306 non-null   float64       
- 17  momentum_3       2306 non-null   float64       
- 18  pct_change_1     2306 non-null   float64       
- 19  pct_change_3     2306 non-null   float64       
- 20  ewm_3            2306 non-null   float64       
- 21  ewm_6            2306 non-null   float64       
- 22  price_to_roll3   2306 non-null   float64       
- 23  price_to_roll12  2306 non-null   float64       
- 24  volatility_3     2306 non-null   float64       
- 25  date             2306 non-null   datetime64[us]
- 26  price_change     2305 non-null   float64       
- 27  decade           2306 non-null   int32         
-dtypes: datetime64[us](1), float64(23), int32(2), int64(2)
-memory usage: 486.6 KB
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>price              0
-year               0
-month              0
-quarter            0
-month_sin          0
-month_cos          0
-lag_1              0
-lag_2              0
-lag_3              0
-lag_6              0
-lag_12             0
-roll_mean_3        0
-roll_mean_6        0
-roll_mean_12       0
-roll_std_3         0
-roll_std_6         0
-momentum_1         0
-momentum_3         0
-pct_change_1       0
-pct_change_3       0
-ewm_3              0
-ewm_6              0
-price_to_roll3     0
-price_to_roll12    0
-volatility_3       0
-date               0
-price_change       1
-decade             0
-dtype: int64</pre>
-</div>
 </div>
 </div>
 </div>
