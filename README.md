@@ -32,7 +32,7 @@ The dataset used is **gold_advanced_features.csv**, which includes:
 
 
 
-## 🔍 Analysis Performed
+##  Analysis Performed
 
 - Time-series visualization of gold prices
 - Growth rate analysis using percentage change
